@@ -509,6 +509,7 @@ footer .about{max-width:28em}
 .xcta .ic{color:var(--or)}
 @media(max-width:1100px){.nfcpacks{grid-template-columns:repeat(2,1fr)}.nfcpack:nth-child(2){border-right:0}.nfcpack:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:960px){.tb-l{display:none}.topbar-in{justify-content:center}}
+@media(max-width:400px){.tb-r{font-size:.8rem;gap:7px}}
 @media(max-width:600px){.nfcpacks{grid-template-columns:1fr}.nfcpack{border-right:0!important;border-bottom:1px solid var(--line)}.nfcpack:last-child{border-bottom:0}}
 .fab{text-decoration:none}
 
@@ -789,7 +790,7 @@ a.qbtn{text-decoration:none}
         <a class="btn btn-primary" href="#combos">Ver sistemas</a>
         <a class="btn btn-ghost" href="#nfc">Ver productos NFC</a>
       </div>
-      <p class="micro enter" style="--d:.28s">Pago único, sin abonos mensuales. Tarjeta, Mercado Pago, transferencia o efectivo.</p>
+      <p class="micro enter" style="--d:.28s">Pago único. Tarjeta, Mercado Pago, transferencia o efectivo.</p>
       <div class="quick enter" style="--d:.34s">
         <p>¿Qué tipo de negocio tenés?</p>
         <div>
@@ -838,7 +839,7 @@ a.qbtn{text-decoration:none}
           <div class="phone"><div class="pscr">
             <div class="p-head">Tu Comercio<small>Menú digital · Demo</small></div>
             <div class="p-item"><div><b>Milanesa completa</b><span>$12.800</span></div><div class="p-add">+</div></div>
-            <div class="p-item"><div><b>Pizza muzzarella</b><span>$9.900</span></div><div class="p-add">+</div></div>
+            <div class="p-item"><div><b>Pizza mozzarella</b><span>$9.900</span></div><div class="p-add">+</div></div>
             <div class="p-item"><div><b>Gaseosa 1,5 L</b><span>$3.200</span></div><div class="p-add">+</div></div>
             <div class="p-item"><div><b>Flan casero</b><span>$4.500</span></div><div class="p-add">+</div></div>
             <div class="p-cart">Pedir por WhatsApp · $22.700</div>
@@ -877,7 +878,7 @@ a.qbtn{text-decoration:none}
     <div class="xgrid diff">
       <article class="xcell"><svg class="ic"><use href="#i-msg"/></svg><h3>Hecho a tu medida</h3><p>Cada pantalla, cada módulo y cada reporte se adaptan a tu rubro. Si falta algo, lo desarrollamos.</p></article>
       <article class="xcell"><svg class="ic"><use href="#i-tool"/></svg><h3>Resolvemos tu problema</h3><p>Fiados que no cobrás, turnos que se pisan, personal sin control, stock que no cierra. Contanos qué te frena y lo resolvemos.</p></article>
-      <article class="xcell"><svg class="ic"><use href="#i-card"/></svg><h3>Sin abono mensual</h3><p>Pagás tu sistema una sola vez. Si después necesitás asistencia, un cambio o un módulo nuevo, se cobra aparte a un valor fijo.</p></article>
+      <article class="xcell"><svg class="ic"><use href="#i-card"/></svg><h3>Pago único</h3><p>Pagás tu sistema una sola vez. Si después necesitás asistencia, un cambio o un módulo nuevo, se cobra aparte a un valor fijo.</p></article>
       <article class="xcell"><svg class="ic"><use href="#i-monitor"/></svg><h3>Pantalla táctil y pantalla para tu cliente</h3><p>Se maneja con el dedo, en caja, mostrador o tablet. Y tu cliente ve en su propia pantalla lo que se carga y cuánto paga.</p></article>
     </div>
   </div>
@@ -1432,7 +1433,7 @@ a.qbtn{text-decoration:none}
           <label class="opt"><input type="radio" name="combo" value="Completo + App"><span>Completo + App</span></label>
           <label class="opt"><input type="radio" name="combo" value="Tarjeta digital"><span>Solo tarjeta digital</span></label>
           <label class="opt"><input type="radio" name="combo" value="Turnero con cartera de clientes"><span>Solo turnero con cartera</span></label>
-          <label class="opt"><input type="radio" name="combo" value="Todavía no sé, necesito asesoramiento"><span>Todavía no sé, asesoreme</span></label>
+          <label class="opt"><input type="radio" name="combo" value="Todavía no sé, necesito asesoramiento"><span>Todavía no sé, necesito asesoramiento</span></label>
         </div>
       </fieldset>
       <fieldset>
@@ -1508,7 +1509,7 @@ a.qbtn{text-decoration:none}
       <div class="lbody">
         <p>Tratamos tus datos personales conforme a la Ley 25.326 de Protección de los Datos Personales, su decreto reglamentario 1558/2001 y las normas de la Agencia de Acceso a la Información Pública (AAIP).</p>
         <h3>Responsable del tratamiento</h3>
-        <p>Vincular Business, Salta, Argentina. Los datos de contacto son <span class="mailtxt"></span> y <span class="watxt"></span>. Los datos completos del titular (nombre o razón social, CUIT y domicilio) figuran al comienzo de esta sección.</p>
+        <p>Vincular Business, Salta, Argentina. Los datos de contacto son <span class="mailtxt"></span> y <span class="watxt"></span>.</p>
         <h3>Qué datos pedimos y para qué</h3>
         <p>En el formulario te pedimos tu nombre, el de tu negocio, tu rubro, el combo que te interesa y un comentario opcional. Los usamos solo para responder tu consulta, enviarte una demo y un presupuesto. Si marcás la casilla opcional, también para enviarte novedades de Vincular Business. No los vendemos ni los cedemos a terceros con fines comerciales.</p>
         <h3>Carácter facultativo</h3>
@@ -1588,9 +1589,9 @@ a.qbtn{text-decoration:none}
       <div>
         <h4>Servicios</h4>
         <ul>
-          <li><a href="#servicios">Qué hacemos</a></li>
-          <li><a href="#modulos">Módulos</a></li>
-          <li><a href="#rubros">Rubros</a></li>
+          <li><a href="#lineas">Qué hacemos</a></li>
+          <li><a href="#modulos-crm">Módulos</a></li>
+          <li><a href="#todos-rubros">Rubros</a></li>
           <li><a href="#combos">Combos</a></li>
         </ul>
       </div>
@@ -1598,7 +1599,7 @@ a.qbtn{text-decoration:none}
         <h4>Empresa</h4>
         <ul>
           <li><a href="#proceso">Cómo trabajamos</a></li>
-          <li><a href="#extras">Servicios extra</a></li>
+          <li><a href="#modulos-crm">Servicios extra</a></li>
           <li><a href="#ahorro">Calculadora</a></li>
           <li><a href="#catalogo-nfc">Catálogo NFC</a></li>
           <li><a href="#faq">Preguntas frecuentes</a></li>
@@ -1651,7 +1652,7 @@ a.qbtn{text-decoration:none}
     horario: '',                          // por ejemplo: 'Lunes a viernes de 9 a 18 h'
     // ---- PRECIOS (siempre en pesos argentinos).
     // Cambiá cualquier número y la web se actualiza sola. Dejá un combo en null para mostrar "Presupuesto a medida".
-    // Todos son pagos únicos (sin abono mensual).
+    // Todos son pagos únicos.
     precios: {
       c1: { unico: 100000 },                // Menú Digital
       c2: { unico: 400000 },                // Básico: Menú + CRM básico
@@ -1969,7 +1970,7 @@ a.qbtn{text-decoration:none}
     const combo = el.closest('.combo');
     const desde = (CONFIG.desde || []).includes(el.dataset.price);
     const unit = el.dataset.unit;
-    el.innerHTML = `<span class="big">${desde ? '<em>Desde</em> ' : ''}${peso(v.unico)}</span>` + (combo ? `<span class="alta">${c4note(el.dataset.price) || (desde ? 'Pago único · se cotiza según tu proyecto' : 'Pago único · sin abonos mensuales')}</span>` : `<span class="usd">${unit || 'Pago único'}</span>`);
+    el.innerHTML = `<span class="big">${desde ? '<em>Desde</em> ' : ''}${peso(v.unico)}</span>` + (combo ? `<span class="alta">${c4note(el.dataset.price) || (desde ? 'Pago único · se cotiza según tu proyecto' : 'Pago único')}</span>` : `<span class="usd">${unit || 'Pago único'}</span>`);
   });
 
   /* ---------- Módulos del CRM ---------- */
