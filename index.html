@@ -6,22 +6,22 @@
 <title>Nicolás Romero Alvarado · Vincular Business</title>
 <meta name="description" content="Tarjeta profesional de Nicolás Romero Alvarado, titular de Vincular Business. Sistemas a medida, NFC y digitalización para comercios y servicios de Argentina.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxyZWN0IHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgcng9IjI0IiBmaWxsPSIjMDAwIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYuNCAyMykgc2NhbGUoLjYyKSI+PHBhdGggZD0iTTggMjAgTDM4IDgwIEw2OCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGRjdBMUEiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNODIgMThhMjIgMjIgMCAwIDEgMCAyNiIvPjxwYXRoIGQ9Ik05NyA3YTQwIDQwIDAgMCAxIDAgNDgiLz48L2c+PC9nPjwvc3ZnPg==">
 <style>
 /* ============================================================
    ESTILOS · definidos exclusivamente por el desarrollador
    ============================================================ */
 :root{
-  --bg:#0b1220; --card:#121b2e; --card2:#18233a; --bd:#27344f;
-  --tx:#eef2fb; --mut:#a9b6cf; --ac:#2fa8f0; --ac2:#19b6a6;
+  --bg:#050506; --card:#0e0f12; --card2:#16181c; --bd:#2a2d34;
+  --tx:#f3f5f8; --mut:#a8b0bd; --ac:#ff7a1a; --ac2:#2fa8f0;
   --or:#ff7a1a; --wa:#25d366; --err:#ff6b6b;
   --r:18px; --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 var(--font);min-height:100vh;
-  background-image:radial-gradient(900px 420px at 50% -8%,rgba(47,168,240,.22),transparent 70%)}
+  background-image:radial-gradient(900px 420px at 50% -8%,rgba(255,122,26,.20),transparent 70%)}
 [hidden]{display:none!important}
 a{color:inherit}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -31,12 +31,13 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 /* Cabecera */
 .hero{background:var(--card);border:1px solid var(--bd);border-radius:24px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35)}
-.cover{height:120px;background:linear-gradient(135deg,#0f3b63,#1b6fa8 55%,var(--ac2));position:relative}
-.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 45%,rgba(0,0,0,.4))}
+.cover{height:156px;background:#000;position:relative;display:grid;place-items:center;border-bottom:3px solid var(--ac);overflow:hidden}
+.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(260px 120px at 50% 120%,rgba(255,122,26,.35),transparent 70%)}
+.cover img{position:relative;height:58px;max-width:80%;display:block;margin-top:-36px;transform:translateX(19px)}
 .hbody{padding:0 20px 22px;text-align:center}
 .avatar{width:104px;height:104px;border-radius:50%;margin:-52px auto 12px;position:relative;z-index:1;
-  display:grid;place-items:center;background:linear-gradient(135deg,var(--ac),var(--ac2));
-  border:4px solid var(--card);font:800 2.1rem/1 var(--font);letter-spacing:.02em;color:#04121f;overflow:hidden}
+  display:grid;place-items:center;background:linear-gradient(135deg,#ff9a4d,var(--ac));
+  border:4px solid var(--card);font:800 2.1rem/1 var(--font);letter-spacing:.02em;color:#1b0f08;overflow:hidden}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 h1{margin:0;font-size:1.55rem;line-height:1.2}
 .sub{margin:.3rem 0 0;color:var(--mut)}
@@ -46,7 +47,7 @@ h1{margin:0;font-size:1.55rem;line-height:1.2}
 
 /* Secciones */
 section.box{margin-top:14px;background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:18px}
-h2{margin:0 0 10px;font-size:1.02rem;letter-spacing:.02em}
+h2{margin:0 0 10px;font-size:1.02rem;letter-spacing:.02em;color:var(--ac)}
 .desc{margin:0;color:var(--mut)}
 dl{margin:0;display:grid;gap:10px}
 .kv{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:baseline;border-bottom:1px solid var(--bd);padding-bottom:10px}
@@ -54,7 +55,7 @@ dl{margin:0;display:grid;gap:10px}
 dt{color:var(--mut);font-size:.88rem}
 dd{margin:0;overflow-wrap:anywhere}
 ul.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-ul.chips li{padding:.4em .8em;border-radius:99px;background:var(--card2);border:1px solid var(--bd);font-size:.9rem}
+ul.chips li{padding:.4em .8em;border-radius:99px;background:var(--card2);border:1px solid rgba(255,122,26,.4);font-size:.9rem}
 
 /* Acciones */
 .acts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -64,7 +65,7 @@ ul.chips li{padding:.4em .8em;border-radius:99px;background:var(--card2);border:
 .btn svg{width:1.3em;height:1.3em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .btn.wide{grid-column:1/-1}
 .btn.wa{background:var(--wa);border-color:var(--wa);color:#04210f}
-.btn.pri{background:var(--ac);border-color:var(--ac);color:#04121f}
+.btn.pri{background:var(--ac);border-color:var(--ac);color:#1b0f08}
 
 /* NFC / QR */
 .nfc{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
@@ -2631,7 +2632,7 @@ function render(){
   const hb = el('div', {class:'hbody'}, avatar, el('h1', {text: nombreCompleto}));
   if (txt(T.cargo)) hb.appendChild(el('p', {class:'sub', text: T.cargo}));
   if (txt(CONFIG.ficha.estado)) hb.appendChild(el('span', {class:'estado'}, el('i'), CONFIG.ficha.estado));
-  frag.appendChild(el('header', {class:'hero'}, el('div', {class:'cover', 'aria-hidden':'true'}), hb));
+  frag.appendChild(el('header', {class:'hero'}, el('div', {class:'cover'}, /^data:image\/svg\+xml;base64,[A-Za-z0-9+/=]+$/.test(CONFIG.logoInstitucional) ? el('img', {src: CONFIG.logoInstitucional, alt: 'Vincular Business'}) : null), hb));
 
   /* Descripción + datos clave */
   const ubic = [T.ciudad, T.provincia && T.provincia !== T.ciudad ? T.provincia : '', T.pais].filter(txt).join(', ');
